@@ -27,14 +27,24 @@
     </ul>
      <h2>How to push a repository to GitHub</h2>
     <p>A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. Often, repositories include a README file, a file with information about your project. README files are written in the plain text Markdown language.</p>
-    <ol>
-        <li>In the upper-right corner of any page, use the  drop-down menu, and select New repository</li>
-        <li>In the Repository name box, enter hello-world.</li>
-        <li>In the Description box, write a short description about repo(optional)</li>
-        <li>Select Add a README file.</li>
-        <li>Select whether your repository will be Public or Private.</li>
-        <li>Click Create repository.</li>
-    </ol>
+
+    <h2>1- Create a repository</h2>
+    <p>You can click on the + symbol on the top right corner of the page then choose "New repository". Give your repo a name then scroll down and click on "Create repository".</p>
+    <h2>2- Add and commit file(s)</h2>
+    <h3>-How to add files in Git</h3>
+    <p>When we first initialized our project, the file was not being tracked by Git. To do that, we use this command git add . The period or dot that comes after add means all the files that exist in the repository. If you want to add a specific file, maybe one named about.txt, you use git add about.txt. Now our file is in the staged state. You will not get a response after this command, but to know what state your file is in, you can run the git status command.</p>
+    <h3>-How to commit files in Git</h3>
+    <p>The next state for a file after the staged state is the committed state. To commit our file, we use the git commit -m "first commit" command. The first part of the command git commit tells Git that all the files staged are ready to be committed so it is time to take a snapshot. The second part -m "first commit" is the commit message. -m is shorthand for message while the text inside the parenthesis is the commit message.</p>
+    <h2>3- Push the repository to GitHub</h2>
+    <p>After you create the repo, you should be redirected to a page that tells you how to create a repo locally or push an existing one. In our case, the project already exists locally so we will use commands in the "…or push an existing repository from the command line" section. These are the commands:
+       <ul>
+           <li>git remote add origin https://github.com/ihechikara/git-and-github-tutorial.git </li>
+           <li>git branch -M main</li>
+           <li> git push -u origin main</li>
+       </ul>
+       The first command <b>git remote add origin URL</b>  creates a connection between your local repo and the remote repo on Github. So to follow along, make sure you are following the steps and working with your own remote repo. You won't usually get a response after executing this command but make sure you have an internet connection. <br> <br>
+The second command <b> git branch -M main </b> changes your main branch's name to "main". The default branch might be created as "master", but "main" is the standard name for this repo now. There is usually no response here. <br> <br>
+The last command <b> git push -u origin main </b> pushes your repo from your local device to GitHub.</p>
 </div>
 </body>
 </html>
