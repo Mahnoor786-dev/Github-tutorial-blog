@@ -17,8 +17,9 @@
         </p>
     </a>
      <h1> Git and GitHub Tutorial - Version Control System</h1>
+     <img id="firstimg" src="git1.jpg" alt="">
     <div id="main">
-    <p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn GitHub's pull request workflow, a popular way to create and review code.</p>
+    <p><br> GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn GitHub's pull request workflow, a popular way to create and review code.</p>
     <h2>Prerequisites</h2>
     <ul>
         <li>A command line interface (I will be using Gitbash)</li>
@@ -60,6 +61,7 @@
     The last command <b> git push -u origin main </b> pushes your repo from your local device to GitHub.
     </p>
     <h2>4- How to Use Branches in Git</h2>
+    <img id="thirdimg" src="git3.png" alt="">
     <p>With branches, you can create a copy of a file you would like to work on without messing up the original copy. You can either merge these changes to the original copy or just let the branch remain independent.
     <br> To create a new branch, run this command: <b> git checkout -b test </b>. I will break it down.  checkout tells Git it is supposed to switch to a new branch. -b tells Git to create a new branch. test is the name of the branch to be created and switched to.</p>
      <p>After modifying and committing your test branch, switch back to the main branch by running this command: <b>git checkout main.</b> <br> <br> Did you notice that we did not add -b ? This is because we are not creating a new branch but rather switching to an existing one. You can check all the branches that exist in your repo by running the git branch command. 
