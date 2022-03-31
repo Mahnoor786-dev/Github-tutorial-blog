@@ -11,7 +11,7 @@
 </style> 
 </head>
 <body>
-    <a href="https://github.com/Mahnoor786-dev" target="_blank">
+    <a id ="head" href="https://github.com/Mahnoor786-dev" target="_blank">
         <p>
             Learn using Github with Mahnoor
         </p>
@@ -48,13 +48,20 @@
     The second command <b> git branch -M main </b> changes your main branch's name to "main". The default branch might be created as "master", but "main" is the standard name for this repo now. There is usually no response here. <br> <br>
     The last command <b> git push -u origin main </b> pushes your repo from your local device to GitHub.
     </p>
-    <h2>How to Use Branches in Git</h2>
+    <h2>4- How to Use Branches in Git</h2>
     <p>With branches, you can create a copy of a file you would like to work on without messing up the original copy. You can either merge these changes to the original copy or just let the branch remain independent.
     <br> To create a new branch, run this command: <b> git checkout -b test </b>. I will break it down.  checkout tells Git it is supposed to switch to a new branch. -b tells Git to create a new branch. test is the name of the branch to be created and switched to.</p>
      <p>After modifying and committing your test branch, switch back to the main branch by running this command: <b>git checkout main.</b> <br> <br> Did you notice that we did not add -b ? This is because we are not creating a new branch but rather switching to an existing one. You can check all the branches that exist in your repo by running the git branch command. 
     <br> Now we can merge the changes we made in the test branch into the main branch by running git merge test. At this point, you will see all the changes made in the test branch reflected on the main branch. <br> <br> If you go on to push your repo to GitHub, you'll see that the test branch will not be pushed. It will only remain in your local repo. 
     If you would like to push your test branch, switch to the branch using git checkout test and then run <b>git push -u origin test. </b></p>
 
+    <h2>5- How to Pull a Repository in Git</h2>
+    <p>
+        To pull in Git means to clone a remote repository's current state into your computer/repository. This comes in handy when you want to work on your repo from a different computer or when you are contributing to an open source project online. <br> <br>
+        To test this, don't worry about switching to a new computer. Just run <b>cd ..</b>  to leave the current directory and go back one step. In my own case, I have navigated back to my desktop. <br> <br>
+        Go to GitHub, and on your repository's main page you should see a green button that says "Code". When you click on the button, you should see some options in a dropdown menu. Go on and copy the HTTPS URL. <br> <br>
+        After that, run <b>git clone YOUR_HTTPS_URL</b> This command pulls the remote repository into your local computer in a folder called git-and-git-tutorial.
+    </p>
 
 </div>
 </body>
