@@ -3,11 +3,6 @@
 --gray90: #0a0a23;
 --gray85: #1b1b32;
 --gray80: #2a2a40;
---gray75: #3b3b4f;
---gray45: #858591;
---gray15: #d0d0d5;
---gray10: #dfdfe2;
---gray05: #eeeef0;
 --gray00: #fff;
 --header-height: 38px;
 --blue-dark: #002ead;
@@ -45,4 +40,10 @@ h2{
 h3{
     color: var(--gray80);
     padding-left: 35px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }

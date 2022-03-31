@@ -25,6 +25,17 @@
         <li>A text editor of your choice (I will be using VS Code).</li>
         <li>A GitHub account.</li>
     </ul>
+    <h2>Some basic concepts before going into it</h2>
+    <p>
+        <h3>-Committed state</h3>
+        <p>A file is in the committed state when all the changes made to the file have been saved in the local repo. Files in the committed stage are files ready to be pushed to the remote repo (on GitHub).</p>
+        <h3>-Modified state</h3>
+        <p>A file in the modified state has some changes made to it but it's not yet saved. This means that the state of the file has been altered from its previous state in the committed state.</p>
+        <h3>-Staged state</h3>
+        <p>A file in the staged state means it is ready to be committed. In this state, all necessary changes have been made so the next step is to move the file to the commit state. You can understand this better by imagining Git as a camera.
+        The camera will only take a snapshot when the file reaches the commit state. After this state, the camera starts comparing changes being made to the same file with the last snapshot (this is the modified state). And when the required changes have been made, the file is staged and moved to the commit state for a new snapshot.</p>
+        <img src="GIT2.png" alt="">
+    </p>
      <h2>How to push a repository to GitHub</h2>
     <p>A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. Often, repositories include a README file, a file with information about your project. README files are written in the plain text Markdown language.</p>
 
@@ -62,9 +73,8 @@
         Go to GitHub, and on your repository's main page you should see a green button that says "Code". When you click on the button, you should see some options in a dropdown menu. Go on and copy the HTTPS URL. <br> <br>
         After that, run <b>git clone YOUR_HTTPS_URL</b> This command pulls the remote repository into your local computer in a folder called git-and-git-tutorial.
     </p>
-
     <h2>About other concepts</h2>
-    For more about git-and-github, visit official documentation of github's tutorial at <a href="https://docs.github.com/en/get-started">Github by github.com</a>
+    <p> For more about git-and-github, visit official documentation of github's tutorial at <a href="https://docs.github.com/en/get-started">Github by github.com</a> </p>
 
 </div>
 </body>
